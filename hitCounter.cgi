@@ -24,7 +24,7 @@ my $printString = $today.';';
 
 unless (-e $completePath){
 	open LOGFILE, '>', $completePath or die "Cannot create file $completePath: $!\n\n";
-	print LOGFILE $today.';1';
+	print LOGFILE $printString.'1';
 	close LOGFILE or die "Cannot close file $completePath: $!\n";
 }
 else{
