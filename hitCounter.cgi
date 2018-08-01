@@ -31,7 +31,7 @@ else{
 	open LOGFILE, '+<', $completePath or die "Cannot create file $completePath: $!\n\n";
 	flock(LOGFILE, 2) or die "Cannot lock $completePath exclusively: $!";
 	my $output = `$tail -1 $completePath`;
-	if($output =~ m/$today;([0-9]+)/){
+	if($output =~ m/$printString([0-9]+)/){
 		my $counter = $1+1;
 		$printString .= $counter;
 		my $length = length($output);
