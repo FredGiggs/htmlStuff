@@ -1,5 +1,5 @@
 # htmlStuff
-  ## hitCounter
+  ## hitCounter.cgi
    ### Description
     a PERL cgi that creates a file with the number of times a page has been acessed per day
    ### Usage
